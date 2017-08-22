@@ -38,14 +38,33 @@
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </span>
         </div>
-        <ul class="user-block">
-          <li class="btn btn-login">
-            <a href="#">Войти</a>
-          </li>
-          <li class="btn btn-register">
-            <a href="#">Регистрация</a>
-          </li>
-        </ul>
+        <nav class="user-navigation">
+          <div class="user-block">
+            <ul class="non-authorised">
+              <li class="btn btn-login">
+                <a href="#">Войти</a>
+              </li>
+              <li class="btn btn-register">
+                <a href="#">Регистрация</a>
+              </li>
+            </ul>
+            <div class="authorised" hidden>
+              <div class="user-profile">
+                <a class="profile-link" href="#">Равшан Джамшутович</a>
+                <a class="quit" href="#">Выход</a>
+              </div>
+              <ul class="user-menu">
+                <li class="user-menu-item">
+                  <a href="#">Мои заказы</a>
+                </li>
+                <li class="user-menu-item">
+                  <a href="#">Личный кабинет</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
       </div>
       <div class="header-bottom">
         <nav class="site-navigation">
