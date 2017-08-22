@@ -11,7 +11,8 @@
           <a>Техномарт</a>
         </h1>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-          <input type="text">
+          <label class="visually-hidde" for="search-field">Поиск по сайту:</label>
+          <input class="search" type="text" if="search-field">
         </form>
         <ul class="shoping-menu">
           <li class="bookmarks">
@@ -31,6 +32,7 @@
           Интернет-магазин строительных материалов и инструментов для ремонта
         </p>
         <div class="contacts">
+         <span class="visually-hidden">Наши контакты:</span>
           <span class="phone">
             +7 (812) 555-05-55
           </span>
@@ -130,7 +132,7 @@
             <h3 class="slide-title">Перфораторы</h3>
             <p class="slide-slogan">Настоящие мужские игрушки</p>
           </div>
-          <div class="slide-1">
+          <div class="slide-1 visually-hidden">
             <h3 class="slide-title">Дрели</h3>
             <p class="slide-slogan">Соседям на радость!</p>
           </div>
@@ -142,7 +144,37 @@
 
       <section class="popular-goods">
         <h2 class="styled-heading">Популярные товары:</h2>
-        <a class="btn btn-primary" href=""
+        <a class="btn btn-primary" href="#">Все популярные товары</a>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3 class="item-title">Перфоратор BOSCH BFG 9000</h3>
+            <img src="img/BFG-9000" width="#" height="#" alt="Перфоратор - модель BFG 9000">
+            <b class="new-label" hidden>new</b>
+            <del class="old-price">32500 Р.</del>
+            <span class="actual-price">25500 Р.</span>
+          </li>
+          <li class="catalog-item">
+            <h3 class="item-title">Перфоратор BOSCH BFG 3000</h3>
+            <img src="img/BFG-2000" width="#" height="#" alt="Перфоратор BOSCH - базовая модель">
+            <b class="new-label" hidden>new</b>
+            <del class="old-price">22500 Р.</del>
+            <span class="actual-price">15500 Р.</span>
+          </li>
+          <li class="catalog-item">
+            <h3 class="item-title">Перфоратор BOSCH BFG 6000</h3>
+            <img src="img/BFG-6000" width="#" height="#" alt="Перфоратор - модель BFG 6000">
+            <b class="new-label" hidden>new</b>
+            <del class="old-price">30500 Р.</del>
+            <span class="actual-price">25500 Р.</span>
+          </li>
+          <li class="catalog-item">
+            <h3 class="item-title">Перфоратор BOSCH BFG 2000</h3>
+            <img src="img/BFG-2000" width="#" height="#" alt="Перфоратор BOSCH - базовая модель">
+            <b class="new-label">new</b>
+            <del class="old-price"></del>
+            <span class="actual-price">12500 Р.</span>
+          </li>
+        </ul>
       </section>
     </main>
   </body>
