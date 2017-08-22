@@ -102,6 +102,39 @@
         <li><a href="#">Инструмент</a></li>
         <li>Перфораторы</li>
       </ul>
+      <h1 class="page-title styled-heading">Перфораторы</h1>
+
+      <section class="filter">
+        <h2 class="filter-title">Фильтр:</h2>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="price">
+            <legend>Цена:</legend>
+            <div class="price-toggles">
+              <div class="price-max-range"></div>
+              <div class="price-range"></div>
+              <span class="min-price"></span>
+              <span class="max-price"></span>
+            </div>
+            <div class="price-outputs">
+              <output>0</output> &ndash; <output>30000</output>
+            </div>
+          </fieldset>
+          <fieldset class="producers">
+            <legend>Производители:</legend>
+            <label><input class="visually-hidden" type="checkbox" name="bosch"  checked>Bosch</label>
+            <label><input class="visually-hidden" type="checkbox" name="interskol">Интерскол</label>
+            <label><input class="visually-hidden" type="checkbox" name="makita" checked>Makita</label>
+            <label for=""><input class="visually-hidden" type="checkbox" name="dewalt" >Dewalt</label>
+            <label for=""><input class="visually-hidden" type="checkbox" name="hitachi">Hitachi</label>
+          </fieldset>
+          <fieldset class="power-supply">
+            <legend>Питание:</legend>
+            <label><input class="visually-hidden" type="radio" name="supply" value="accumulator" checked>Аккумуляторные</label>
+            <label><input class="visually-hidden" type="radio" name="supply" value="network">Сетевые</label>
+          </fieldset>
+          <button class="btn btn-filter" type="submit">Показать</button>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">
