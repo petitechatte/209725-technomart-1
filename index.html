@@ -333,5 +333,28 @@
       <p class="developer"><span>Разработано&nbsp;&mdash;</span>
       <a href="http://htmlacademy.ru/intensive/htmlcss" class="footer-link">htmlacademy.ru</a></p>
     </footer>
+
+    <!-- Модальные окна -->
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Карта проезда</h2>
+      <div class="map-container"></div>
+      <button class="close">x</button>
+    </section>
+
+    <section class="modal modal-form">
+      <h2 class="visually-hidden">Напишите нам:</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p class="contact-data">
+          <label>Ваше имя: <input type="text" name="name" placeholder="Представьтесь, пожалуйста" required></label>
+          <label>Ваш email: <input type="email" name="email" placeholder="Для отправки ответа" required></label>
+        </p>
+        <p class="message-field">
+          <label>Текст письма: <textarea name="message" cols="55" rows="5" required>В свободной форме</textarea></label>
+        </p>
+        <button type="submit" class="btn btn-primary">Отправить</button>
+      </form>
+      <button class="close">x</button>
+    </section>
   </body>
 </html>
