@@ -1,0 +1,8 @@
+/*общие текстовые свойства*/
+
+body {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  font-family: "PTSans", "Arial", sans-serif;
+}
