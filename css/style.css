@@ -6,3 +6,18 @@ body {
   color: #000000;
   font-family: "PTSans", "Arial", sans-serif;
 }
+
+.styled-heading {
+  font-size: 30px;
+  line-height: 30px;
+  color: #3d546e;
+  font-family: "Cuprum", "Verdana", sans-serif;
+  text-transform: uppercase;
+}
+
+.simple-heading {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "Cuprum", "Verdana", sans-serif;
+  text-transform: uppercase;
+}
