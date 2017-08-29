@@ -12,6 +12,7 @@ body {
   line-height: 30px;
   color: #3d546e;
   font-family: "Cuprum", "Verdana", sans-serif;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
@@ -19,5 +20,6 @@ body {
   font-size: 30px;
   line-height: 30px;
   font-family: "Cuprum", "Verdana", sans-serif;
+  font-weight: normal;
   text-transform: uppercase;
 }
