@@ -111,6 +111,14 @@
           <fieldset class="price">
             <legend>Цена:</legend>
             <div class="price-toggles">
+              <label class="visually-hidden">
+                <input type="range" min="0" max="30000" value="0">
+                Минимальная цена
+              </label>
+              <label class="visually-hidden">
+                <input type="range" min="0" max="30000" value="25000">
+                Максимальная цена
+              </label>
               <div class="price-max-range"></div>
               <div class="price-range"></div>
               <span class="min-price"></span>
@@ -145,7 +153,7 @@
           <li><a href="#">По функционалу</a></li>
         </ul>
         <ul class="sorting-direction">
-          <li class="sorting-up"><a href="#">По возрастанию</a></li>
+          <li class="sorting-up current-sorting"><a>По возрастанию</a></li>
           <li><a class="sorting-down" href="#">По убыванию</a></li>
         </ul>
       </section>
@@ -161,7 +169,7 @@
             <span class="actual-price">15500 Р.</span>
             <div class="overlay visually-hidden">
               <a class="buy-item" href="#">Купить</a>
-              <a class="to-bookmarks" href="#">В закладки</a>
+              <button class="to-bookmarks" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -172,7 +180,7 @@
             <span class="actual-price">25500 Р.</span>
             <div class="overlay visually-hidden">
               <a class="buy-item" href="#">Купить</a>
-              <a class="to-bookmarks" href="#">В закладки</a>
+              <button class="to-bookmarks" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -183,7 +191,7 @@
             <span class="actual-price">12500 Р.</span>
             <div class="overlay visually-hidden">
               <a class="buy-item" href="#">Купить</a>
-              <a class="to-bookmarks" href="#">В закладки</a>
+              <button class="to-bookmarks" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -194,7 +202,7 @@
             <span class="actual-price">15500 Р.</span>
             <div class="overlay visually-hidden">
               <a class="buy-item" href="#">Купить</a>
-              <a class="to-bookmarks" href="#">В закладки</a>
+              <button class="to-bookmarks" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -205,7 +213,7 @@
             <span class="actual-price">25500 Р.</span>
             <div class="overlay visually-hidden">
               <a class="buy-item" href="#">Купить</a>
-              <a class="to-bookmarks" href="#">В закладки</a>
+              <button class="to-bookmarks" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -216,7 +224,7 @@
             <span class="actual-price">12500 Р.</span>
             <div class="overlay visually-hidden">
               <a class="buy-item" href="#">Купить</a>
-              <a class="to-bookmarks" href="#">В закладки</a>
+              <button class="to-bookmarks" type="button">В закладки</button>
             </div>
           </li>
            <li class="catalog-item">
@@ -227,7 +235,7 @@
             <span class="actual-price">15500 Р.</span>
             <div class="overlay visually-hidden">
               <a class="buy-item" href="#">Купить</a>
-              <a class="to-bookmarks" href="#">В закладки</a>
+              <button class="to-bookmarks" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -238,7 +246,7 @@
             <span class="actual-price">25500 Р.</span>
             <div class="overlay visually-hidden">
               <a class="buy-item" href="#">Купить</a>
-              <a class="to-bookmarks" href="#">В закладки</a>
+              <button class="to-bookmarks" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -249,7 +257,7 @@
             <span class="actual-price">12500 Р.</span>
             <div class="overlay visually-hidden">
               <a class="buy-item" href="#">Купить</a>
-              <a class="to-bookmarks" href="#">В закладки</a>
+              <button class="to-bookmarks" type="button">В закладки</button>
             </div>
           </li>
         </ul>
@@ -257,7 +265,7 @@
 
       <ul class="pagination">
         <li hidden><a class="btn">Предыдущая</a></li>
-        <li class="current-page"><a class="btn" href="#">1</a></li>
+        <li class="current-page"><a class="btn">1</a></li>
         <li><a class="btn" href="#">2</a></li>
         <li><a class="btn" href="#">3</a></li>
         <li><a class="btn" href="#">Следующая</a></li>
@@ -311,7 +319,7 @@
       <p class="feedback"><span>Обратная связь:</span>
       <a class="footer-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
       <p class="developer"><span>Разработано&nbsp;&mdash;</span>
-      <a href="http://htmlacademy.ru/intensive/htmlcss" class="footer-link">htmlacademy.ru</a></p>
+      <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
     </footer>
 
     <section class="modal modal-cart">
@@ -319,7 +327,7 @@
       <p class="popup-message">Товар добавлен в корзину!</p>
       <a class="btn btn-primary" href="#">Оформить заказ</a>
       <button class="btn btn-alternative" type="button">Продолжить покупки</button>
-      <button class="close">x</button>
+      <button class="close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
