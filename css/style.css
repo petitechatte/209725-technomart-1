@@ -420,9 +420,15 @@ input {
   background-color: #ffffff;
 }
 
-.to-bookmarks:hover;
+.to-bookmarks:hover,
 .to-bookmarks:focus {
   border-color: #32425c;
+}
+
+.to-bookmarks:active {
+  opacity: 0.3;
+  box-shadow: none;
+  outline: none;
 }
 
 /*сервисы*/
@@ -675,4 +681,33 @@ fieldset.power-supply label {
 .sorting a[href]:active {
   color: #ee3643;
   border: none;
+}
+
+
+/*постраничная навигация*/
+
+.pagination {
+  list-style: none;
+}
+
+.pagination .btn {
+  color: #000000;
+}
+
+.pagination a[href]:hover,
+.pagination a[href]:focus {
+  border-color: #bdc6ca;
+}
+
+.pagination a[href]:active {
+  border-color: #ee3643;
+}
+
+
+.current-page .btn {
+  border-color: #ee3643;
+
+  color: #ffffff;
+
+  background-color: #ee3643;
 }
