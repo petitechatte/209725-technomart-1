@@ -1,6 +1,10 @@
 /*общие свойства*/
 
+html,
 body {
+  margin: 0;
+  padding: 0;
+
   font-size: 13px;
   line-height: 18px;
   color: #000000;
@@ -53,6 +57,8 @@ input {
 }
 
 .page-logo {
+  margin: 0;
+
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -100,3 +106,17 @@ input {
   background-color: #161d29;
 }
 
+.shopping-menu .order {
+  background-color: #6db254; /* цвет на главной */
+}
+
+.shopping-menu .order:hover,
+.shopping-menu .order:focus {
+  background-color: #5fbb2d;
+}
+
+.shopping-menu .order:active {
+  color: rgba(255, 255, 255, 0.51);
+
+  background-color: #518534;
+}
