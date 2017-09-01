@@ -382,5 +382,13 @@ input[name="list-toggle"]:checked + label {
   background-color: #ffffff;
 }
 
+.sliders ul {
+  list-style: none;
+}
+
+.sliders .styled-heading {
+  font-size: 36px;
+  line-height: 36px;
+}
 
 
