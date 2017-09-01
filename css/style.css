@@ -91,6 +91,19 @@ input {
   background-color: #ee3643;
 }
 
+.inner-page .page-logo {
+  color: #ffffff;
+}
+
+.inner-page .page-logo:hover,
+.inner-page .page-logo:focus {
+  background-color: #ca2c37;
+}
+
+.inner-page .page-logo:active {
+  background-color: #ba2732;
+}
+
 .search-form input {
   border: none;
 
@@ -118,6 +131,11 @@ input {
 
 .shopping-menu a {
   color: #ffffff;
+}
+
+.bookmarks a:not(.empty),
+.cart a:not(.empty){
+  background-color: #ee3643;
 }
 
 .shopping-menu a:hover,
@@ -174,7 +192,7 @@ input {
 }
 
 .non-authorised a,
-.authorised a {
+.user-profile a {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -182,10 +200,17 @@ input {
   background-color: #ffffff;
 }
 
+.user-menu a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
 .non-authorised a:hover,
 .non-authorised a:focus,
-.authorised a:hover,
-.authorised a:focus {
+.user-menu a:hover,
+.user-menu a:focus {
   color: #ee3643;
 }
 
