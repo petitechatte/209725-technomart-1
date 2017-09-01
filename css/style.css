@@ -44,6 +44,8 @@ input {
 }
 
 .btn-primary {
+  border: none;
+
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -480,5 +482,31 @@ input[name="list-toggle"]:checked + label {
   color: #ee3643;
   text-decoration: none;
 }
+
+/*модальные окна карты и входа*/
+
+.modal-map {
+  background-color: #565656;
+}
+
+.modal-form label {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
+}
+
+.modal-form input,
+.modal-form textarea {
+  border: 2px solid #dee3e4;
+
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", "Candara", "Tahoma", sans-serif;
+}
+
+.modal-form textarea {
+  resize: none;
+}
+
 
 
