@@ -10,6 +10,8 @@ body {
   color: #000000;
   font-family: "PTSans", "Candara", "Tahoma", sans-serif;
   font-weight: 400;
+
+  background-color: #ffffff;
 }
 
 img {
@@ -197,4 +199,66 @@ input {
   color: rgba(255, 255, 255, 0.5);
 
   background-color: #1d2739;
+}
+
+/*рекламный блок*/
+
+.promo {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
+}
+
+.promo-list {
+  list-style: none;
+}
+
+.promo-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.new-label {
+  color: #ffffff;
+  font-weight: 400;
+
+  background-color: #ff5357;
+}
+
+.btn-promo {
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn-promo:hover,
+.btn-promo:focus {
+  background-color: rba(0, 0, 0, 0.2);
+}
+
+.btn-promo:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.promo-materials {
+  background-color: #ffbf47;
+}
+
+.promo-tool {
+  background-color: #3bbce3;
+}
+
+.promo-mechanism {
+  background-color: #dc91d8;
+}
+
+.promo-discount {
+  background-color: #8ed78f;
+}
+
+.promo-delivery {
+  background-color: #ffc047;
 }
