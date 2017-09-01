@@ -470,7 +470,8 @@ input[name="list-toggle"]:checked + label {
 }
 
 .footer-menu,
-.footer-promo {
+.footer-promo,
+.socials {
   list-style: none;
 }
 
@@ -604,4 +605,38 @@ fieldset.producers label {
 fieldset.power-supply label {
   font-size: 14px;
   line-height: 20px;
+}
+
+/*сортировка*/
+
+.sorting {
+  text-transform: uppercase;
+
+  background-color: #f7f3ec;
+}
+
+.sorting ul {
+  list-style: none;
+}
+
+.sorting a.current {
+  color: #ee3643;
+}
+
+.sorting a[href] {
+  border-bottom: 1px dotted #ee3643;
+
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting a[href]:hover,
+.sorting a[href]:focus {
+  border-bottom: 1px solid #ee3643;
+
+  color: #000000;
+}
+
+.sorting a[href]:active {
+  color: #ee3643;
+  border: none;
 }
