@@ -389,6 +389,42 @@ input {
   background-color: #ee3643;
 }
 
+.buy-item {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
+  text-transform: uppercase;
+
+  background-color: #63a63e;
+}
+
+.buy-item:hover,
+.buy-item:focus {
+  background-color: #5fbb2d;
+}
+
+.buy-item:active {
+  background-color: #518534;
+}
+
+.to-bookmarks {
+  border: 3px solid #63a63e;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
+  font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+.to-bookmarks:hover;
+.to-bookmarks:focus {
+  border-color: #32425c;
+}
+
 /*сервисы*/
 
 .services {
