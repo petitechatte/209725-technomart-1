@@ -104,11 +104,17 @@ input:disabled + label {
 }
 
 .header-top {
+  min-height: 42px;
+
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
 
   background-color: #293449;
+}
+
+.header-top .container {
+  display: flex;
 }
 
 .page-logo {
@@ -159,6 +165,9 @@ input:disabled + label {
 /*верхнее меню покупателя*/
 
 .shopping-menu {
+  display: flex;
+  margin-left: auto;
+
   list-style: none;
 }
 
@@ -199,11 +208,24 @@ input:disabled + label {
 
 /*средняя часть шапки*/
 
+.header-middle {
+  display: flex;
+  min-height: 158px;
+}
+
 .site-description {
+  width: 300px;
+
   font-size: 16px;
   line-height: 23px;
   color: #ff5357;
   font-style: italic;
+}
+
+.header-contacts {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
 
 .header-contacts .phone {
@@ -218,6 +240,16 @@ input:disabled + label {
   font-size: 14px;
   line-height: 24px;
   color: #3d546e;
+}
+
+.user-navigation {
+  width: 300px;
+}
+
+.non-authorised,
+.user-profile,
+.user-menu {
+  display: flex;
 }
 
 .user-navigation ul {
@@ -255,6 +287,8 @@ input:disabled + label {
 /*нижнее меню сайта*/
 
 .header-bottom {
+  min-height: 55px;
+
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
@@ -263,6 +297,9 @@ input:disabled + label {
 }
 
 .main-menu {
+  display: flex;
+  justify-content: space-around;
+
   list-style: none;
 }
 
@@ -291,7 +328,13 @@ input:disabled + label {
 }
 
 .promo-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+}
+
+.promo-item {
+  flex-basis: 300px;
 }
 
 .promo-title {
@@ -346,6 +389,8 @@ input:disabled + label {
 /*слайдер в промо-блоке*/
 
 .slider {
+  flex-basis: 620px;
+
   background-color: #6f5d4c;
 }
 
@@ -383,11 +428,14 @@ input:disabled + label {
 
 .catalog-list,
 .producers-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
 .catalog-item,
 .producers-item {
+  width: 220px;
   border: 1px solid #eaeaea;
 
   font-weight: 700;
