@@ -316,7 +316,8 @@ input {
 
 /*популярные товары*/
 
-.popular-goods header {
+.popular-goods header,
+.popular-producers header {
   background-color: #f9f5f0;
 }
 
@@ -336,7 +337,8 @@ input {
   color: #000000;
 }
 
-.catalog-item .old-price {
+.catalog-item .old-price,
+.catalog-item .actual-price {
   font-size: 17px;
   line-height: 18px;
   color: #a9a9a9;
@@ -344,10 +346,9 @@ input {
 }
 
 .catalog-item .actual-price {
-  font-size: 17px;
-  line-height: 18px;
   color: #ffffff;
-  text-transform: uppercase;
 
   background-color: #ee3643;
 }
+
+
