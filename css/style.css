@@ -726,3 +726,22 @@ fieldset.power-supply label {
 
   background-color: #ee3643;
 }
+
+/*модальное окно корзины*/
+
+.modal-cart {
+  font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
+}
+
+.popup-message {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.cart-buttons {
+  background-color: #f1f1f1;
+}
+
+btn-alternative {
+  border: none;
+}
