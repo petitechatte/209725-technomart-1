@@ -44,6 +44,8 @@ input {
 /*шапка*/
 
 .page-header {
+  font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
+
   background-color: #f3f7f9;
 }
 
@@ -51,7 +53,6 @@ input {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
-  font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
 
   background-color: #33445a; /* цвет верхнего меню на главной */
 }
@@ -119,4 +120,52 @@ input {
   color: rgba(255, 255, 255, 0.51);
 
   background-color: #518534;
+}
+
+/*среднее меню*/
+
+.site-description {
+  font-size: 16px;
+  line-height: 23px;
+  color: #ff5357;
+  font-style: italic;
+}
+
+.header-contacts .phone {
+  border: 3px solid #ffffff;
+
+  font-size: 21px;
+  line-height: 21px;
+  color: #fb463c
+}
+
+.header-contacts .address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #3d546e;
+}
+
+.user-navigation ul {
+  list-style: none;
+}
+
+.non-authorised a,
+.authorised a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.non-authorised a:hover,
+.non-authorised a:focus,
+.authorised a:hover,
+.authorised a:focus {
+  color: #ee3643;
+}
+
+.non-authorised a:active,
+.authorised a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
