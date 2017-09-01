@@ -1,4 +1,4 @@
-/*общие текстовые свойства*/
+/*общие свойства*/
 
 body {
   font-size: 13px;
@@ -6,6 +6,18 @@ body {
   color: #000000;
   font-family: "PTSans", "Candara", "Tahoma", sans-serif;
   font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  font: inherit;
 }
 
 .styled-heading {
@@ -24,3 +36,67 @@ body {
   font-weight: normal;
   text-transform: uppercase;
 }
+
+/*шапка*/
+
+.page-header {
+  background-color: #f3f7f9;
+}
+
+.header-top {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
+
+  background-color: #33445a; /* цвет верхнего меню на главной */
+}
+
+.page-logo {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  background-color: #ff5357;
+}
+
+.search-form input {
+  border: none;
+
+  font-size: 17px;
+  line-height: 1.2;
+  color: #000000;
+
+  background-color: #33445a; /* цвет верхнего меню на главной */
+}
+
+.search-form input:hover {
+  background-color: #212a3a;
+}
+
+.search-form input:focus {
+  background-color: #ffffff;
+  outline: none;
+}
+
+/*верхнее меню покупателя*/
+
+.shopping-menu {
+  list-style: none;
+}
+
+.shopping-menu a {
+  color: #ffffff;
+}
+
+.shopping-menu a:hover,
+.shopping-menu a:focus {
+  background-color: #212a3a;
+}
+
+.shopping-menu a:active {
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: #161d29;
+}
+
