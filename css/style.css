@@ -30,6 +30,23 @@ input:disabled + label {
   opacity: 0.4;
 }
 
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  border: 0;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+}
+
 .styled-heading {
   font-size: 30px;
   line-height: 30px;
@@ -578,7 +595,29 @@ input[name="list-toggle"]:checked + label {
 /*модальные окна карты и входа*/
 
 .modal-map {
+  position: fixed;
+  left: 50%;
+  top: 150px;
+
+  display: none;
+  width: 940px;
+  height: 450px;
+  margin-left: -470px;
+
   background-color: #565656;
+}
+
+.modal-form {
+  position: fixed;
+  left: 50%;
+  top: 300px;
+
+  display: none;
+  width: 620px;
+  height: 426px;
+  margin-left: -310px;
+
+  background-color: #ffffff;
 }
 
 .modal-form label {
@@ -730,7 +769,18 @@ fieldset.power-supply label {
 /*модальное окно корзины*/
 
 .modal-cart {
+  position: fixed;
+  left: 50%;
+  top: 150px;
+
+  display: none;
+  width: 620px;
+  height: 273px;
+  margin-left: -310px;
+
   font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
+
+  background-color: #ffffff;
 }
 
 .popup-message {
