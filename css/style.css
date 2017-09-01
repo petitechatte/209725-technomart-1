@@ -314,18 +314,20 @@ input {
   font-family: "PT Sans", "Candara", "Tahoma", sans-serif;
 }
 
-/*популярные товары*/
+/*популярные товары и производители*/
 
 .popular-goods header,
 .popular-producers header {
   background-color: #f9f5f0;
 }
 
-.catalog-list {
+.catalog-list,
+.producers-list {
   list-style: none;
 }
 
-.catalog-item {
+.catalog-item,
+.producers-item {
   border: 1px solid #eaeaea;
 
   font-weight: 700;
@@ -350,5 +352,35 @@ input {
 
   background-color: #ee3643;
 }
+
+/*сервисы*/
+
+.services {
+  line-height: 24px;
+
+  background-color: #f4f8f9;
+  background-image: url(../img/services-pattern.png);
+}
+
+.services-slider-toggles {
+  list-style: none;
+
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+  font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
+  font-weight: 700;
+}
+
+.services-slider-toggles label {
+  background-color: #32425c;
+}
+
+input[name="list-toggle"]:checked + label {
+  color: #32425c;
+
+  background-color: #ffffff;
+}
+
 
 
