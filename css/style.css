@@ -109,11 +109,14 @@ input:disabled + label {
 }
 
 .inner-page .page-logo:hover,
-.inner-page .page-logo:focus {
+.inner-page .page-logo:focus,
+.inner-page .footer-logo:hover,
+.inner-page .footer-logo:focus {
   background-color: #ca2c37;
 }
 
-.inner-page .page-logo:active {
+.inner-page .page-logo:active,
+.inner-page .footer-logo:active {
   background-color: #ba2732;
 }
 
@@ -490,6 +493,10 @@ input[name="list-toggle"]:checked + label {
   font-size: 18px;
   line-height: 20px;
   font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
+}
+
+.inner-page .information {
+  background-color: #f2f6f8;
 }
 
 /*подвал*/
