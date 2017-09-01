@@ -43,6 +43,15 @@ input {
   text-transform: uppercase;
 }
 
+.btn {
+  border: 1px solid #e5e5e5;
+
+  font: inherit;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
 .btn-primary {
   border: none;
 
@@ -533,5 +542,66 @@ input[name="list-toggle"]:checked + label {
   resize: none;
 }
 
+/*внутренняя страница - "хлебные крошки" и заголовок*/
+
+.breadcrumbs {
+  list-style: none;
+
+  text-transform: uppercase;
+}
 
 
+.breadcrumbs a {
+  color: #000000;
+}
+
+.page-title {
+  background-color: #f2f6f8;
+}
+
+/*фильтр*/
+
+.filter {
+  text-transform: uppercase;
+}
+
+.filter-title {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+
+  background-color: #f7f3ec;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.price-outputs {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.price-outputs output {
+  font-size: 17px;
+  color: #000000;
+
+  background-color: #f7f3ec;
+}
+
+fieldset.producers label {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+fieldset.power-supply label {
+  font-size: 14px;
+  line-height: 20px;
+}
