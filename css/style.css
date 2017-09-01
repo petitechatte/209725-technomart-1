@@ -43,12 +43,23 @@ input {
   text-transform: uppercase;
 }
 
+.btn-primary {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  font-family: "Cuprum", "Verdana", sans-serif;
+  text-transform: uppercase;
+
+  background-color: #ff5357;
+}
+
 /*шапка*/
 
 .page-header {
   font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
 
   background-color: #f3f7f9;
+  background-image: url(../img/white-pattern.png);
 }
 
 .header-top {
@@ -56,7 +67,7 @@ input {
   line-height: 18px;
   color: #ffffff;
 
-  background-color: #33445a; /* цвет верхнего меню на главной */
+  background-color: #293449;
 }
 
 .page-logo {
@@ -66,7 +77,7 @@ input {
   line-height: 24px;
   text-transform: uppercase;
 
-  background-color: #ff5357;
+  background-color: #ee3643;
 }
 
 .search-form input {
@@ -76,7 +87,7 @@ input {
   line-height: 1.2;
   color: #000000;
 
-  background-color: #33445a; /* цвет верхнего меню на главной */
+  background-color: #293449;
 }
 
 .search-form input:hover {
@@ -110,7 +121,7 @@ input {
 }
 
 .shopping-menu .order {
-  background-color: #6db254; /* цвет на главной */
+  background-color: #63a63e;
 }
 
 .shopping-menu .order:hover,
@@ -179,7 +190,7 @@ input {
   line-height: 17px;
   color: #ffffff;
 
-  background-color: #3d546e; /* цвет на главной */
+  background-color: #32425c;
 }
 
 .main-menu {
@@ -261,4 +272,35 @@ input {
 
 .promo-delivery {
   background-color: #ffc047;
+}
+
+/*слайдер в промо-блоке*/
+
+.slider {
+  background-color: #6f5d4c;
+}
+
+.promo .slide-1 {
+  background-image: url(../img/slide-1-background.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.promo .slide-2 {
+  background-image: url(../img/slide-2-background.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.slide-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.slide-slogan {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "PTSans", "Candara", "Tahoma", sans-serif;
 }
