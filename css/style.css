@@ -256,7 +256,7 @@ input {
 
 .btn-promo:hover,
 .btn-promo:focus {
-  background-color: rba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .btn-promo:active {
@@ -406,4 +406,55 @@ input[name="list-toggle"]:checked + label {
   font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
 }
 
+/*подвал*/
 
+.page-footer {
+  color: #f3f7f9;
+  font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
+
+  background-color: #32425c;
+}
+
+.footer-top {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-logo {
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.footer-contacts {
+  color: #f3f7f9;
+}
+
+.footer-menu,
+.footer-promo {
+  list-style: none;
+}
+
+.footer-menu a {
+  color: #f1f5f7;
+}
+
+.footer-menu a:hover,
+.footer-menu a:focus,
+.footer-promo a:hover,
+.footer-promo a:focus {
+  text-decoration: underline;
+}
+
+.footer-menu a:active,
+.footer-promo a:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.footer-promo a {
+  color: #ffd180;
+}
