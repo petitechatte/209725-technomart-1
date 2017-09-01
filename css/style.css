@@ -26,6 +26,10 @@ input {
   font: inherit;
 }
 
+input:disabled + label {
+  opacity: 0.4;
+}
+
 .styled-heading {
   font-size: 30px;
   line-height: 30px;
@@ -452,6 +456,10 @@ input {
 
 .services-slider-toggles label {
   background-color: #32425c;
+}
+
+.services-slider-toggles label:hover {
+  background-color: #293449;
 }
 
 input[name="list-toggle"]:checked + label {

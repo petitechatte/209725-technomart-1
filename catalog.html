@@ -132,16 +132,23 @@
           </fieldset>
           <fieldset class="producers">
             <legend>Производители:</legend>
-            <label><input class="visually-hidden" type="checkbox" name="bosch"  checked>Bosch</label>
-            <label><input class="visually-hidden" type="checkbox" name="interskol">Интерскол</label>
-            <label><input class="visually-hidden" type="checkbox" name="makita" checked>Makita</label>
-            <label><input class="visually-hidden" type="checkbox" name="dewalt" >Dewalt</label>
-            <label><input class="visually-hidden" type="checkbox" name="hitachi">Hitachi</label>
+            <input class="visually-hidden" type="checkbox" name="bosch" id="bosch" checked>
+            <label for="bosch">Bosch</label>
+            <input class="visually-hidden" type="checkbox" name="interskol" id="interskol">
+            <label for="interskol">Интерскол</label>
+            <input class="visually-hidden" type="checkbox" name="makita" id="makita" checked>
+            <label for="makita">Makita</label>
+            <input class="visually-hidden" type="checkbox" name="dewalt"  id="dewalt">
+            <label for="dewalt">Dewalt</label>
+            <input class="visually-hidden" type="checkbox" name="hitachi" id="hitachi">
+            <label for="hitachi">Hitachi</label>
           </fieldset>
           <fieldset class="power-supply">
             <legend>Питание:</legend>
-            <label><input class="visually-hidden" type="radio" name="supply" value="accumulator" checked>Аккумуляторные</label>
-            <label><input class="visually-hidden" type="radio" name="supply" value="network">Сетевые</label>
+            <input class="visually-hidden" type="radio" name="supply" value="accumulator" id="accumulator" checked>
+            <label for="accumulator">Аккумуляторные</label>
+            <input class="visually-hidden" type="radio" name="supply" value="network" id="network">
+            <label for="network">Сетевые</label>
           </fieldset>
           <button class="btn btn-filter" type="submit">Показать</button>
         </form>
