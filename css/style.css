@@ -24,10 +24,6 @@ a {
   text-decoration: none;
 }
 
-input {
-  font: inherit;
-}
-
 input:disabled + label {
   opacity: 0.4;
 }
@@ -392,17 +388,17 @@ input:disabled + label {
 
 .slider {
   flex-basis: 620px;
-
-  background-color: #6f5d4c;
 }
 
 .promo .slide-1 {
+  background-color: #9b8975;
   background-image: url(../img/slide-1-background.jpg);
   background-position: top left;
   background-repeat: no-repeat;
 }
 
 .promo .slide-2 {
+  background-color: #6a4f46;
   background-image: url(../img/slide-2-background.jpg);
   background-position: top left;
   background-repeat: no-repeat;
