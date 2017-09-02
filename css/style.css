@@ -378,24 +378,31 @@ a {
 
 .promo-materials {
   background-color: #ffbf47;
+  order: 1;
 }
 
 .promo-tool {
   background-color: #3bbce3;
+  order: 2;
 }
 
 .promo-mechanism {
   background-color: #dc91d8;
+  order: 3;
 }
 
 .promo-discount {
   background-color: #8ed78f;
+  order: 5;
 }
 
 .promo-delivery {
-  margin-left: auto;
-
   background-color: #ffc047;
+  order: 6;
+}
+
+.promo-slider-item {
+  order: 4;
 }
 
 /*слайдер в промо-блоке*/
@@ -659,12 +666,14 @@ input[name="list-toggle"]:checked + label {
 
 /*информация и контакты*/
 
-.index-columns {
+.columns {
   display: flex;
 }
 
 .information,
 .map-section {
+  margin-bottom: 86px;
+
   line-height: 24px;
 }
 
@@ -707,6 +716,7 @@ input[name="list-toggle"]:checked + label {
 }
 
 .footer-logo {
+  width: 220px;
   font-size: 30px;
   line-height: 30px;
   color: #ffffff;
@@ -719,10 +729,23 @@ input[name="list-toggle"]:checked + label {
   color: #f3f7f9;
 }
 
+.footer-contacts span {
+  display: block;
+}
+
 .footer-menu,
 .footer-promo,
 .socials {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.footer-menu,
+.footer-promo {
+  width: 550px;
 }
 
 .footer-menu a {
@@ -752,6 +775,14 @@ input[name="list-toggle"]:checked + label {
   color: #ffffff;
 
   background-color: #293449;
+}
+
+.footer-bottom .columns {
+  justify-content: space-between;
+}
+
+.socials {
+  width: 300px;
 }
 
 .footer-link {
