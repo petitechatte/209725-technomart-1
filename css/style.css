@@ -26,6 +26,8 @@ a {
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
+
+  outline: 2px solid red;
 }
 
 .visually-hidden {
@@ -112,15 +114,34 @@ a {
 }
 
 .page-logo {
+  position: relative;
   width: 220px;
   margin: 0;
+  padding: 9px 0;
+
+  background-color: #ee3643;
+}
+
+.page-logo::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: "";
+  width: 220px;
+  height: 5px;
+
+  background-color: #b52933;
+}
+
+.page-logo h2 {
+  margin: 0;
+  padding: 0;
 
   font-size: 24px;
   line-height: 24px;
   color: #ffffff;
   text-transform: uppercase;
-
-  background-color: #ee3643;
+  text-align: center;
 }
 
 .inner-page .page-logo:hover,
@@ -135,14 +156,27 @@ a {
   background-color: #ba2732;
 }
 
-.search-form input {
+.search-form {
+  position: relative;
   width: 270px;
+}
+
+.search-label {
+  position: absolute;
+  left: 49px;
+  top: 14px;
+}
+
+.search-form input {
+  width: 100%;
+  height: 100%;
   border: none;
+  padding-left: 49px;
   box-sizing: border-box;
 
   font-size: 17px;
   line-height: 1.2;
-  color: #000000;
+  color: #ffffff;
   font-family: inherit;
 
   background-color: #293449;
@@ -153,8 +187,10 @@ a {
 }
 
 .search-form input:focus {
+  color: #000000;
+
   background-color: #ffffff;
-  outline: none; /* состояние фокуса задается изменением фона согласно макету  */
+  outline: none; /* состояние фокуса задается изменением цвета согласно макету  */
 }
 
 /*верхнее меню покупателя*/
@@ -172,6 +208,7 @@ a {
   width: 150px;
 
   color: #ffffff;
+  vertical-align: top;
 }
 
 .bookmarks a:not(.empty),
@@ -344,7 +381,17 @@ a {
 .promo-item {
   width: 300px;
   min-height: 123px;
+  margin: 0;
+  padding: 0;
   margin-bottom: 20px;
+}
+
+.promo-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .promo-title {
@@ -393,15 +440,21 @@ a {
 
 .promo-discount {
   background-color: #8ed78f;
-  order: 5;
 }
 
 .promo-delivery {
   background-color: #ffc047;
-  order: 6;
+}
+
+.promo-group-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  order: 5;
 }
 
 .promo-slider-item {
+  width: 620px;
   order: 4;
 }
 
@@ -409,6 +462,7 @@ a {
 
 .slider {
   position: relative;
+  flex-shrink: 0;
   width: 621px;
   height: 266px;
   margin-bottom: 20px;

@@ -13,8 +13,8 @@
         <div class="container">
           <a class="page-logo"><h2>Техномарт</h2></a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <label class="visually-hidde" for="search-field">Поиск:</label>
-            <input class="search" type="text" id="search-field">
+            <label class="visually-hidden" for="search-field">Поиск:</label>
+            <input class="search" type="text" id="search-field" name="search-requiry" value="Поиск:">
           </form>
           <ul class="shopping-menu">
             <li class="bookmarks">
@@ -121,17 +121,21 @@
               <b class="new-label" hidden>new</b>
               <a class="btn btn-promo" href="#">Для стройки</a>
             </li>
+            <li class="promo-group-wrapper">
+              <ul class="promo-group">
+                <li class="promo-item promo-discount">
+                  <h3 class="promo-title">Скидки 50%</h3>
+                  <b class="new-label" hidden>new</b>
+                  <a class="btn btn-promo" href="#">На 350 товаров</a>
+                </li>
+                <li class="promo-item promo-delivery">
+                  <h3 class="promo-title">Доставка</h3>
+                  <b class="new-label" hidden>new</b>
+                  <a class="btn btn-promo" href="#">Бесплатно</a>
+                </li>
+              </ul>
+            </li>
 
-            <li class="promo-item promo-discount">
-              <h3 class="promo-title">Скидки 50%</h3>
-              <b class="new-label" hidden>new</b>
-              <a class="btn btn-promo" href="#">На 350 товаров</a>
-            </li>
-            <li class="promo-item promo-delivery">
-              <h3 class="promo-title">Доставка</h3>
-              <b class="new-label" hidden>new</b>
-              <a class="btn btn-promo" href="#">Бесплатно</a>
-            </li>
             <li class="promo-slider-item">
               <div class="slider">
                 <input class="visually-hidden" type="radio" id="toggle-slide-1" name="toggle" checked>
