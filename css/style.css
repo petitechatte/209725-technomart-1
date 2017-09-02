@@ -452,8 +452,8 @@ a {
 
 /*популярные товары и производители*/
 
-.popular-goods {
-  margin-bottom: 21px;
+.popular-producers {
+  margin-bottom: 65px;
 }
 
 .popular-header {
@@ -488,6 +488,7 @@ a {
 .catalog-item,
 .producers-item {
   width: 218px;
+  margin-bottom: 20px;
   border: 1px solid #eaeaea;
 
   font-weight: 700;
@@ -502,7 +503,6 @@ a {
   justify-content: center;
   align-items: center;
   min-height: 143px;
-  margin-bottom: 20px;
 }
 
 .catalog-item .item-title {
@@ -577,13 +577,28 @@ a {
 /*сервисы*/
 
 .services {
+  padding-bottom: 9px;
+
   line-height: 24px;
 
   background-color: #f4f8f9;
   background-image: url(../img/services-pattern.png);
 }
 
+.services h2 {
+  padding-top: 59px;
+}
+
+.slider-columns {
+  display: flex;
+  margin-top: 74px;
+}
+
 .services-slider-toggles {
+  width: 240px;
+  margin: 0;
+  margin-right: 60px;
+  padding: 0;
   list-style: none;
 
   font-size: 21px;
@@ -594,7 +609,15 @@ a {
 }
 
 .services-slider-toggles label {
+  display: block;
+  min-height: 60px;
+  border-bottom: 1px solid #4d637b;
+
   background-color: #32425c;
+}
+
+.services-toggle:last-child label {
+  border: none;
 }
 
 .services-slider-toggles label:hover {
@@ -608,12 +631,23 @@ input[name="list-toggle"]:checked + label {
 }
 
 .sliders ul {
+  min-height: 284px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .sliders .styled-heading {
   font-size: 36px;
   line-height: 36px;
+}
+
+.sliders h3 {
+  margin-top: 0;
+}
+
+.sliders p {
+  width: 400px;
 }
 
 /*информация и контакты*/
