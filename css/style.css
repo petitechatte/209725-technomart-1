@@ -89,6 +89,8 @@ a {
 /*шапка*/
 
 .page-header {
+  padding-bottom: 60px;
+
   font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
 
   background-color: #f3f7f9;
@@ -110,17 +112,15 @@ a {
 }
 
 .page-logo {
+  width: 220px;
   margin: 0;
 
   font-size: 24px;
   line-height: 24px;
+  color: #ffffff;
   text-transform: uppercase;
 
   background-color: #ee3643;
-}
-
-.inner-page .page-logo {
-  color: #ffffff;
 }
 
 .inner-page .page-logo:hover,
@@ -136,7 +136,9 @@ a {
 }
 
 .search-form input {
+  width: 270px;
   border: none;
+  box-sizing: border-box;
 
   font-size: 17px;
   line-height: 1.2;
@@ -159,12 +161,15 @@ a {
 
 .shopping-menu {
   display: flex;
-  margin-left: auto;
+  margin: 0;
 
   list-style: none;
 }
 
 .shopping-menu a {
+  display: inline-block;
+  width: 150px;
+
   color: #ffffff;
 }
 
@@ -206,6 +211,10 @@ a {
   min-height: 158px;
 }
 
+.header-middle p {
+  margin: 0;
+}
+
 .site-description {
   width: 300px;
 
@@ -240,6 +249,7 @@ a {
 }
 
 .user-navigation ul {
+  margin: 0;
   list-style: none;
 }
 
@@ -286,6 +296,7 @@ a {
 .main-menu {
   display: flex;
   justify-content: space-around;
+  margin: 0;
 
   list-style: none;
 }
@@ -308,6 +319,8 @@ a {
 /*рекламный блок*/
 
 .promo {
+  padding-top: 59px;
+
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
