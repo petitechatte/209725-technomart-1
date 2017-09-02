@@ -1,5 +1,3 @@
-/* Извините, я без наставника, не хватило времени доверстать. Очень надеюсь, что Вы дадите мне возможность доделать проект до 4 сентября. */
-
 /*общие свойства*/
 
 html,
@@ -22,10 +20,6 @@ img {
 
 a {
   text-decoration: none;
-}
-
-input:disabled + label {
-  opacity: 0.4;
 }
 
 .container {
@@ -147,6 +141,7 @@ input:disabled + label {
   font-size: 17px;
   line-height: 1.2;
   color: #000000;
+  font-family: inherit;
 
   background-color: #293449;
 }
@@ -157,7 +152,7 @@ input:disabled + label {
 
 .search-form input:focus {
   background-color: #ffffff;
-  outline: none;
+  outline: none; /* состояние фокуса задается изменением фона согласно макету  */
 }
 
 /*верхнее меню покупателя*/
@@ -459,6 +454,14 @@ input:disabled + label {
   background-color: #ee3643;
 }
 
+.overlay {
+  display: none;
+}
+
+.catalog-item:hover .overlay {
+  display: block;
+}
+
 .buy-item {
   font-size: 14px;
   line-height: 18px;
@@ -497,8 +500,7 @@ input:disabled + label {
 
 .to-bookmarks:active {
   opacity: 0.3;
-  box-shadow: none;
-  outline: none;
+  outline: none; /* активное состояние задается изменением прозрачности элемента согласно макету */
 }
 
 /*сервисы*/
@@ -747,6 +749,11 @@ fieldset.producers label {
 fieldset.power-supply label {
   font-size: 14px;
   line-height: 20px;
+}
+
+
+.custom-input:disabled + label {
+  opacity: 0.4;
 }
 
 /*сортировка*/
