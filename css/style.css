@@ -239,12 +239,6 @@ a {
   width: 300px;
 }
 
-.non-authorised,
-.user-profile,
-.user-menu {
-  display: flex;
-}
-
 .user-navigation ul {
   list-style: none;
 }
