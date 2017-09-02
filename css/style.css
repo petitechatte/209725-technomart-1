@@ -499,10 +499,17 @@ a {
 }
 
 .producers-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 143px;
+}
+
+.producers-item a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.producers-item img {
+  margin: auto;
 }
 
 .catalog-item .item-title {
@@ -652,9 +659,21 @@ input[name="list-toggle"]:checked + label {
 
 /*информация и контакты*/
 
+.index-columns {
+  display: flex;
+}
+
 .information,
 .map-section {
   line-height: 24px;
+}
+
+.information {
+  width: 560px;
+}
+
+.information p {
+  padding-left: 0;
 }
 
 .delivery-partners {
@@ -663,6 +682,10 @@ input[name="list-toggle"]:checked + label {
   font-size: 18px;
   line-height: 20px;
   font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
+}
+
+.map-section {
+  width: 300px;
 }
 
 .inner-page .information {
