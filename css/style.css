@@ -89,7 +89,6 @@ a {
 /*шапка*/
 
 .page-header {
-  margin-bottom: 59px;
   padding-bottom: 60px;
 
   font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
@@ -323,6 +322,7 @@ a {
 /*рекламный блок*/
 
 .promo {
+  margin-top: 59px;
   margin-bottom: 53px;
 
   font-size: 14px;
@@ -670,19 +670,14 @@ input[name="list-toggle"]:checked + label {
   display: flex;
 }
 
-.information,
-.map-section {
+.information {
   margin-bottom: 86px;
 
   line-height: 24px;
 }
 
-.information {
+.information-column {
   width: 560px;
-}
-
-.information p {
-  padding-left: 0;
 }
 
 .delivery-partners {
@@ -698,6 +693,8 @@ input[name="list-toggle"]:checked + label {
 }
 
 .inner-page .information {
+  margin-bottom: 73px;
+
   background-color: #f2f6f8;
 }
 
@@ -801,6 +798,10 @@ input[name="list-toggle"]:checked + label {
 
 /*модальные окна карты и входа*/
 
+.modal {
+  position: relative;
+}
+
 .modal-map {
   position: fixed;
   left: 50%;
@@ -846,9 +847,25 @@ input[name="list-toggle"]:checked + label {
   resize: none;
 }
 
+.modal-footer {
+  background-color: #f4f4f4;
+}
+
+.modal .close {
+  position: absolute;
+}
+
 /*внутренняя страница - "хлебные крошки" и заголовок*/
 
+.main-content .columns {
+  flex-wrap: wrap;
+}
+
 .breadcrumbs {
+  display: flex;
+  min-height: 59px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 
   text-transform: uppercase;
@@ -860,12 +877,17 @@ input[name="list-toggle"]:checked + label {
 }
 
 .page-title {
+  min-height: 89px;
+  margin-bottom: 20px;
+
   background-color: #f2f6f8;
 }
 
 /*фильтр*/
 
 .filter {
+  width: 220px;
+
   text-transform: uppercase;
 }
 
@@ -917,14 +939,30 @@ fieldset.power-supply label {
 
 /*сортировка*/
 
+.catalog-contents {
+  width: 700px;
+}
+
 .sorting {
+  display: flex;
+  min-height: 38px;
+  margin-bottom: 20px;
+
   text-transform: uppercase;
 
   background-color: #f7f3ec;
 }
 
 .sorting ul {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.sorting-type {
+  width: 380px;
 }
 
 .sorting a.current {
@@ -953,6 +991,10 @@ fieldset.power-supply label {
 /*постраничная навигация*/
 
 .pagination {
+  margin-left: 0;
+  margin-top: 32px;
+  margin-bottom: 60px;
+  padding: 0;
   list-style: none;
 }
 
