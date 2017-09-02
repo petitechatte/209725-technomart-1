@@ -162,6 +162,7 @@ a {
 .shopping-menu {
   display: flex;
   margin: 0;
+  padding: 0;
 
   list-style: none;
 }
@@ -250,6 +251,7 @@ a {
 
 .user-navigation ul {
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -297,6 +299,7 @@ a {
   display: flex;
   justify-content: space-around;
   margin: 0;
+  padding: 0;
 
   list-style: none;
 }
@@ -319,7 +322,7 @@ a {
 /*рекламный блок*/
 
 .promo {
-  padding-top: 59px;
+  margin-top: 59px;
 
   font-size: 14px;
   line-height: 18px;
@@ -330,11 +333,17 @@ a {
 .promo-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .promo-item {
-  flex-basis: 300px;
+  width: 300px;
+  min-height: 123px;
+  margin-bottom: 20px;
 }
 
 .promo-title {
@@ -383,16 +392,30 @@ a {
 }
 
 .promo-delivery {
+  margin-left: auto;
+
   background-color: #ffc047;
 }
 
 /*слайдер в промо-блоке*/
 
 .slider {
-  flex-basis: 620px;
+  position: relative;
+  width: 621px;
+  height: 266px;
+  margin-bottom: 20px;
+}
+
+.promo .slide {
+  display: none;
+  width: 621px;
+  height: 266px;
+  border-top: 1px solid transparent;
 }
 
 .promo .slide-1 {
+  display: block;
+
   background-color: #9b8975;
   background-image: url(../img/slide-1-background.jpg);
   background-position: top left;
@@ -419,17 +442,39 @@ a {
   font-family: "PT Sans", "Candara", "Tahoma", sans-serif;
 }
 
+.slider .slide-toggle,
+.slider .btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /*популярные товары и производители*/
 
-.popular-goods header,
-.popular-producers header {
+.popular-header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 89px;
+
   background-color: #f9f5f0;
+}
+
+.popular-header .btn-container {
+  width: 300px;
+}
+
+.popular-header a {
+  display: inline-block;
+  width: 253px;
+  box-sizing: border-box;
 }
 
 .catalog-list,
 .producers-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
