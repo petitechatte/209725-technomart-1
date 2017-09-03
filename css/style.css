@@ -759,6 +759,9 @@ input[name="toggle"]:checked + .slider-control {
 
 .catalog-item {
   position: relative;
+
+  display: flex;
+  flex-direction: column;
   min-height: 316px;
 }
 
@@ -773,13 +776,17 @@ input[name="toggle"]:checked + .slider-control {
 }
 
 .producers-item img {
-  margin: auto;
+  order: 1;
 }
 
 .catalog-item .item-title {
+  margin: 11px 15px;
+
   font-size: 18px;
   line-height: 20px;
   color: #000000;
+  text-align: center;
+  order: 2;
 }
 
 .catalog-item .old-price,
@@ -790,10 +797,15 @@ input[name="toggle"]:checked + .slider-control {
   text-transform: uppercase;
 }
 
+.catalog-item .old-price {
+  order: 3;
+}
+
 .catalog-item .actual-price {
   color: #ffffff;
 
   background-color: #ee3643;
+  order: 4;
 }
 
 .overlay {
