@@ -57,10 +57,12 @@ a {
 }
 
 .btn {
+  display: inline-block;
   border: 1px solid #e5e5e5;
 
   font: inherit;
   text-transform: uppercase;
+  vertical-align: top;
 
   background-color: #ffffff;
 }
@@ -382,8 +384,6 @@ a {
 /*нижнее меню сайта*/
 
 .header-bottom {
-  min-height: 55px;
-
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
@@ -391,17 +391,35 @@ a {
 
 .main-menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: justify;
   margin: 0;
   padding: 0;
-
+  padding-left: 16px;
+  border-bottom: 5px solid #293449;
   list-style: none;
 
   background-color: #32425c;
 }
 
+.main-menu li {
+  margin: 0;
+  padding: 0;
+}
+
 .main-menu a {
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
   color: #ffffff;
+  vertical-align: top;
+}
+
+.menu-item:first-child a,
+.main-item:last-child a {
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 .main-menu a:hover,
@@ -438,11 +456,12 @@ a {
 }
 
 .promo-item {
+  position: relative;
   width: 300px;
-  min-height: 123px;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .promo-group {
@@ -454,21 +473,45 @@ a {
 }
 
 .promo-title {
+  margin-left: 24px;
+  margin-top: 20px;
+  padding: 0;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
 }
 
 .new-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 59px;
+
+  background-color: transparent;
+  background-image: url(../img/new-label.png);
+}
+
+.new-label span {
+  font-size: 16px;
+  line-height: 18px;
   color: #ffffff;
+  font-family: "PT Sans", "Candara", "Tahoma", sans-serif;
   font-weight: 400;
 
   background-color: #ee3643;
 }
 
 .btn-promo {
+  width: 135px;
+  padding: 14px 0;
+  border: none;
+  border-radius: 3px;
+
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
 
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -615,6 +658,7 @@ a {
 }
 
 .catalog-item {
+  position: relative;
   min-height: 316px;
 }
 
