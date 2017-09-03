@@ -1000,8 +1000,10 @@ input[name="list-toggle"]:checked + label {
 }
 
 .sliders li {
-  width: 640px;
-  height: 290px;
+  display: none;
+  width: 650px;
+  height: 283px;
+  margin-right: -10px;
   padding-left: 20px;
   box-sizing: border-box;
 }
@@ -1017,11 +1019,31 @@ input[name="list-toggle"]:checked + label {
   width: 400px;
 }
 
-.slide-1 {
+.sliders .slide-1 {
+  display: block;
+
   background-color: transparent;
   background-image: url(../img/delivery-slide.png);
   background-repeat: no-repeat;
+  background-position: 170px bottom;
+}
+
+.sliders .slide-2 {
+  background-color: transparent;
+  background-image: url(../img/guarantee-slide.png);
+  background-repeat: no-repeat;
   background-position: right 23px;
+}
+
+.sliders .slide-3 {
+  background-color: transparent;
+  background-image: url(../img/credit-slide.png);
+  background-repeat: no-repeat;
+  background-position: right 23px;
+}
+
+.slide-3 .btn-primary {
+  width: 195px;
 }
 
 /*информация и контакты*/
