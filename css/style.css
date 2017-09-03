@@ -62,12 +62,13 @@ a {
 
   font: inherit;
   text-transform: uppercase;
-  vertical-align: top;
+  vertical-align: middle;
 
   background-color: #ffffff;
 }
 
 .btn-primary {
+  padding: 10px 0;
   border: none;
   border-radius: 2px;
 
@@ -76,6 +77,8 @@ a {
   color: #ffffff;
   font-family: "Cuprum", "Verdana", sans-serif;
   text-transform: uppercase;
+  text-align: center;
+
 
   background-color: #ee3643;
 }
@@ -438,7 +441,7 @@ a {
 
 .promo {
   margin-top: 59px;
-  margin-bottom: 53px;
+  margin-bottom: 33px;
 
   font-size: 14px;
   line-height: 18px;
@@ -687,6 +690,7 @@ a {
 .slider-control {
   position: absolute;
   bottom: 36px;
+
   width: 6px;
   height: 6px;
   border: 2px solid #ffffff;
@@ -716,19 +720,21 @@ input[name="toggle"]:checked + .slider-control {
 .popular-header {
   display: flex;
   justify-content: space-between;
-  min-height: 89px;
   margin-bottom: 20px;
+  padding: 24px 25px;
 
   background-color: #f9f5f0;
 }
 
-.popular-header .btn-container {
-  width: 300px;
+.popular-header h2 {
+  margin: 0;
+  padding: 6px 4px;
 }
 
 .popular-header a {
   display: inline-block;
   width: 253px;
+  margin-right:
   box-sizing: border-box;
 }
 
