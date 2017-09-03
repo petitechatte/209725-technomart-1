@@ -69,6 +69,7 @@ a {
 
 .btn-primary {
   border: none;
+  border-radius: 2px;
 
   font-size: 14px;
   line-height: 18px;
@@ -590,7 +591,8 @@ a {
   display: none;
   width: 621px;
   height: 266px;
-  border-top: 1px solid transparent;
+  padding: 23px;
+  box-sizing: border-box;
 }
 
 .promo .slide-1 {
@@ -610,6 +612,11 @@ a {
 }
 
 .slide-title {
+  margin: 0;
+  margin-bottom: 1px;
+  padding: 0;
+  padding-left: 2px;
+
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -617,16 +624,87 @@ a {
 }
 
 .slide-slogan {
+  margin: 0;
+  padding: 0;
+  padding-left: 2px;
   font-size: 18px;
   line-height: 24px;
   font-family: "PT Sans", "Candara", "Tahoma", sans-serif;
 }
 
-.slider .slide-toggle,
-.slider .btn {
+.slider .slide-toggle {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 110px;
+  width: 50px;
+  height: 50px;
+  border: none;
+
+  background-color: transparent;
+}
+
+.slider .slide-toggle::before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  border-left: 3px solid #ffffff;
+  border-top: 3px solid #ffffff;
+
+  cursor: pointer;
+}
+
+
+.slider .previous-slide {
+  left: 15px;
+}
+
+.slider .next-slide {
+  right: 10px;
+}
+
+.slider .previous-slide::before {
+  top: 10px;
+  left: 15px;
+  transform: rotate(-45deg);
+}
+
+.slider .next-slide::before {
+  top: 10px;
+  left: 5px;
+  transform: rotate(135deg);
+}
+
+.slider .btn-primary {
+  position: absolute;
+  left: 25px;
+  bottom: 22px;
+  width: 196px;
+  padding: 10px 0;
+
+  text-align: center;
+}
+
+.slider-control {
+  position: absolute;
+  bottom: 36px;
+  width: 6px;
+  height: 6px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+
+  background-color: #ffffff;
+}
+
+input[name="toggle"]:checked + .slider-control {
+  background-color: #ee3643;
+}
+
+.slider-control-1 {
+  left: 295px;
+}
+
+.slider-control-2 {
+  left: 315px;
 }
 
 /*популярные товары и производители*/
