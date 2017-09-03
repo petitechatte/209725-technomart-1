@@ -721,7 +721,7 @@ input[name="toggle"]:checked + .slider-control {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  padding: 24px 25px;
+  padding: 24px;
 
   background-color: #f9f5f0;
 }
@@ -734,7 +734,7 @@ input[name="toggle"]:checked + .slider-control {
 .popular-header a {
   display: inline-block;
   width: 253px;
-  margin-right:
+  margin-top: 1px;
   box-sizing: border-box;
 }
 
@@ -762,7 +762,8 @@ input[name="toggle"]:checked + .slider-control {
 
   display: flex;
   flex-direction: column;
-  min-height: 316px;
+
+  text-align: center;
 }
 
 .producers-item {
@@ -785,7 +786,7 @@ input[name="toggle"]:checked + .slider-control {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
-  text-align: center;
+
   order: 2;
 }
 
@@ -798,14 +799,47 @@ input[name="toggle"]:checked + .slider-control {
 }
 
 .catalog-item .old-price {
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
   order: 3;
+
+  text-indent: 5px;
+}
+
+.old-price span {
+  visibility: hidden;
 }
 
 .catalog-item .actual-price {
+  position: relative;
+
+  width: 123px;
+  margin-left: 42px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  box-sizing: border-box;
+
   color: #ffffff;
+  text-indent: 15px;
 
   background-color: #ee3643;
   order: 4;
+}
+
+.catalog-item .actual-price::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0;
+
+  width: 0;
+  height: 0;
+
+  border: 19px solid transparent;
+  border-left-color: #ee3643;
 }
 
 .overlay {
