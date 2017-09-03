@@ -238,6 +238,10 @@ a {
 
 .shopping-menu .bookmarks {
   padding-left: 44px;
+
+  background-image: url(../img/icon-bookmark.svg);
+  background-repeat: no-repeat;
+  background-position: 18px 12px;
 }
 
 .shopping-menu .cart {
