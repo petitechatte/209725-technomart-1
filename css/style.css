@@ -770,6 +770,11 @@ input[name="toggle"]:checked + .slider-control {
   min-height: 143px;
 }
 
+.catalog-item:hover,
+.producers-item:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
 .producers-item a {
   display: flex;
   width: 100%;
@@ -777,6 +782,7 @@ input[name="toggle"]:checked + .slider-control {
 }
 
 .producers-item img {
+  margin: auto;
   order: 1;
 }
 
