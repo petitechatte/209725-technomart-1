@@ -23,11 +23,9 @@ a {
 }
 
 .container {
-  width: 960px;
+  width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-
-  outline: 2px solid red;
 }
 
 .visually-hidden {
@@ -100,8 +98,6 @@ a {
 }
 
 .header-top {
-  min-height: 42px;
-
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -118,7 +114,8 @@ a {
   flex-shrink: 0;
   width: 220px;
   margin: 0;
-  padding: 9px 0;
+  padding-top: 10px;
+  padding-bottom: 8px;
 
   background-color: #ee3643;
 }
@@ -141,6 +138,7 @@ a {
   font-size: 24px;
   line-height: 24px;
   color: #ffffff;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
 }
@@ -173,7 +171,8 @@ a {
   width: 270px;
   height: 100%;
   border: none;
-  padding-left: 49px;
+  padding-left: 48px;
+  padding-top: 0;
   box-sizing: border-box;
 
   font-size: 17px;
@@ -269,7 +268,7 @@ a {
 
 .header-middle {
   display: flex;
-  min-height: 158px;
+  justify-content: space-between;
 }
 
 .header-middle p {
@@ -278,6 +277,11 @@ a {
 
 .site-description {
   width: 300px;
+  padding-top: 49px;
+  padding-bottom: 40px;
+  padding-left: 52px;
+  padding-right: 50px;
+  box-sizing: border-box;
 
   font-size: 16px;
   line-height: 23px;
@@ -288,10 +292,16 @@ a {
 .header-contacts {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   width: 300px;
 }
 
 .header-contacts .phone {
+  margin-top: 46px;
+  padding-top: 10px;
+  padding-left: 71px;
+  padding-right: 50px;
+  padding-bottom: 8px;
   border: 3px solid #ffffff;
 
   font-size: 21px;
@@ -300,6 +310,9 @@ a {
 }
 
 .header-contacts .address {
+  margin-top: 4px;
+  padding: 0 10px;
+
   font-size: 14px;
   line-height: 24px;
   color: #3d546e;
@@ -307,16 +320,35 @@ a {
 
 .user-navigation {
   width: 300px;
+  margin-top: 46px;
 }
 
 .user-navigation ul {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.user-navigation li {
+  margin: 0;
+  padding: 0;
+}
+
+.non-authorised ul {
+  justify-content: flex-end;
+}
+
+.non-authorised li {
+  margin-left: 10px;
+}
+
 .non-authorised a,
 .user-profile a {
+  display: inline-block;
+  padding: 12px 25px;
+
+
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -343,6 +375,10 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.non-authorised .btn-login {
+  padding-left: 48px;
+}
+
 /*нижнее меню сайта*/
 
 .header-bottom {
@@ -351,8 +387,6 @@ a {
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
-
-  background-color: #32425c;
 }
 
 .main-menu {
@@ -362,6 +396,8 @@ a {
   padding: 0;
 
   list-style: none;
+
+  background-color: #32425c;
 }
 
 .main-menu a {

@@ -17,11 +17,11 @@
             <input class="search" type="text" id="search-field">
           </form>
           <ul class="shopping-menu">
-            <li class="bookmarks">
-              <a class="empty" href="#">Закладки: 0</a>
+            <li>
+              <a class="bookmarks empty" href="#">Закладки: 0</a>
             </li>
-            <li class="cart">
-              <a href="#">Корзина: 10</a>
+            <li>
+              <a class="cart" href="#">Корзина: 10</a>
             </li>
             <li>
               <a class="order" href="#">Оформить заказ</a>
@@ -45,19 +45,25 @@
         </p>
         <nav class="user-navigation">
           <div class="user-block">
-            <ul class="non-authorised" hidden>
-              <li class="btn-login">
-                <a href="#">Войти</a>
-              </li>
-              <li class="btn-register">
-                <a href="#">Регистрация</a>
-              </li>
-            </ul>
+            <div class="none-authorised">
+              <ul>
+                <li>
+                  <a class="btn-login" href="#">Войти</a>
+                </li>
+                <li >
+                  <a class="btn-register" href="#">Регистрация</a>
+                </li>
+              </ul>
+            </div>
             <div class="authorised">
-              <div class="user-profile">
-                <a class="profile-link" href="#">Равшан Джамшутович</a>
-                <a class="quit" href="#">Выход</a>
-              </div>
+              <ul class="user-profile">
+                <li>
+                  <a class="profile-link" href="#">Равшан Джамшутович</a>
+                </li>
+                <li>
+                  <a class="quit" href="#">Выход</a>
+                </li>
+              </ul>
               <ul class="user-menu">
                 <li class="user-menu-item">
                   <a href="#">Мои заказы</a>
