@@ -117,9 +117,11 @@ a {
   display: flex;
 }
 
-.page-logo {
+.page-logo,
+.footer-logo {
   position: relative;
-  width: 220px;
+
+  width: 100%;
   margin: 0;
   padding-top: 10px;
   padding-bottom: 8px;
@@ -127,7 +129,9 @@ a {
   background-color: #ee3643;
 }
 
-.page-logo::after {
+.page-logo::after,
+.footer-logo::after {
+  content: "";
   position: absolute;
   top: 100%;
   left: 0;
@@ -138,7 +142,8 @@ a {
   background-color: #b52933;
 }
 
-.page-logo h2 {
+.page-logo h2,
+.footer-logi h2 {
   margin: 0;
   padding: 0;
 
@@ -1244,21 +1249,37 @@ input[name="list-toggle"]:checked + label {
 }
 
 .footer-top {
+  justify-content: space-between;
   font-size: 18px;
   line-height: 24px;
 }
 
 .footer-logo {
+  display: block;
   width: 220px;
+  margin-bottom: 33px;
+  padding-top: 18px;
+  padding-bottom: 15px;
+}
+
+.footer-logo h2 {
+  margin: 0;
+  padding: 0;
+
   font-size: 30px;
   line-height: 30px;
   color: #ffffff;
+  font-weight: 400;
   text-transform: uppercase;
-
-  background-color: #ee3643;
+  text-align: center;
 }
 
+
 .footer-contacts {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-left: 2px;
+
   color: #f3f7f9;
 }
 
@@ -1270,7 +1291,7 @@ input[name="list-toggle"]:checked + label {
 .footer-promo,
 .socials {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1278,7 +1299,18 @@ input[name="list-toggle"]:checked + label {
 
 .footer-menu,
 .footer-promo {
-  width: 550px;
+  justify-content: flex-end;
+}
+
+.footer-menu li,
+.footer-promo li {
+  margin-left: 60px;
+  padding: 0;
+}
+
+.footer-menu {
+  margin-top: 38px;
+  margin-bottom: 35px;
 }
 
 .footer-menu a {
