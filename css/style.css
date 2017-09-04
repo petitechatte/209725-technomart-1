@@ -1151,6 +1151,7 @@ input[name="list-toggle"]:checked + label {
 
 .slide-3 .btn-primary {
   min-width: 195px;
+  margin-top: 18px;
 }
 
 /*информация и контакты*/
@@ -1167,6 +1168,7 @@ input[name="list-toggle"]:checked + label {
 
 .information-column {
   width: 560px;
+  margin-right: 80px;
 }
 
 .information h2 {
@@ -1208,14 +1210,28 @@ input[name="list-toggle"]:checked + label {
   background-color: #ee3643;
 }
 
+.information-column .btn-primary {
+  min-width: 220px;
+  margin-top: 17px;
+}
+
 .map-section {
   width: 300px;
+}
+
+.map-section .map-box {
+  margin-top: 30px;
+  margin-bottom: 32px;
 }
 
 .inner-page .information {
   margin-bottom: 73px;
 
   background-color: #f2f6f8;
+}
+
+.map-section .btn-primary {
+  width: 100%;
 }
 
 /*подвал*/
