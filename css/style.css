@@ -1027,8 +1027,8 @@ input[name="toggle"]:checked + .slider-control {
 /*сервисы*/
 
 .services {
+  margin-bottom: 83px;
   padding-top: 40px;
-  padding-bottom: 9px;
 
   line-height: 24px;
 
@@ -1139,18 +1139,18 @@ input[name="list-toggle"]:checked + label {
   background-color: transparent;
   background-image: url(../img/guarantee-slide.png);
   background-repeat: no-repeat;
-  background-position: right 23px;
+  background-position: right bottom;
 }
 
 .sliders .slide-3 {
   background-color: transparent;
   background-image: url(../img/credit-slide.png);
   background-repeat: no-repeat;
-  background-position: right 23px;
+  background-position: right bottom;
 }
 
 .slide-3 .btn-primary {
-  width: 195px;
+  min-width: 195px;
 }
 
 /*информация и контакты*/
@@ -1169,12 +1169,43 @@ input[name="list-toggle"]:checked + label {
   width: 560px;
 }
 
+.information h2 {
+  margin-top: 0;
+}
+
+.information-column p {
+  margin-top: 23px;
+  margin-bottom: 18px;
+}
+
 .delivery-partners {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
   list-style: none;
 
   font-size: 18px;
   line-height: 20px;
   font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
+}
+
+.delivery-partners li {
+  position: relative;
+
+  margin-bottom: 20px;
+  padding-left: 35px;
+}
+
+.delivery-partners li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: #ee3643;
 }
 
 .map-section {
