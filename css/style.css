@@ -730,6 +730,7 @@ a {
   margin: 0;
   padding: 0;
   padding-left: 2px;
+
   font-size: 18px;
   line-height: 24px;
   font-family: "PT Sans", "Candara", "Tahoma", sans-serif;
@@ -738,6 +739,7 @@ a {
 .slider .slide-toggle {
   position: absolute;
   top: 110px;
+
   width: 50px;
   height: 50px;
   border: none;
@@ -748,6 +750,7 @@ a {
 .slider .slide-toggle::before {
   position: absolute;
   content: "";
+
   width: 26px;
   height: 26px;
   border-left: 3px solid #ffffff;
@@ -781,6 +784,7 @@ a {
   position: absolute;
   left: 25px;
   bottom: 22px;
+
   min-width: 195px;
   padding: 10px;
 
@@ -821,22 +825,20 @@ input[name="toggle"]:checked + .slider-control {
 .popular-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
-  padding: 24px;
+  padding: 25px 24px;
 
   background-color: #f9f5f0;
 }
 
 .popular-header h2 {
   margin: 0;
-  padding: 6px 4px;
+  margin-left: 4px;
 }
 
 .popular-header a {
-  display: inline-block;
-  width: 253px;
-  margin-top: 1px;
-  box-sizing: border-box;
+  min-width: 253px;
 }
 
 .catalog-list,
@@ -910,7 +912,7 @@ input[name="toggle"]:checked + .slider-control {
 }
 
 .catalog-item .old-price {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   margin-left: auto;
   margin-right: auto;
   order: 3;
@@ -925,7 +927,7 @@ input[name="toggle"]:checked + .slider-control {
 .catalog-item .actual-price {
   position: relative;
 
-  width: 123px;
+  width: 122px;
   margin-left: 42px;
   margin-bottom: 20px;
   padding: 10px;
@@ -955,6 +957,8 @@ input[name="toggle"]:checked + .slider-control {
 
 .overlay {
   position: absolute;
+  top: 0;
+  left: 0;
 
   display: none;
   width: 218px;
