@@ -16,6 +16,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -58,7 +59,9 @@ a {
 
 .btn {
   display: inline-block;
+  padding: 10px;
   border: 1px solid #e5e5e5;
+  box-sizing: border-box;
 
   font: inherit;
   text-transform: uppercase;
@@ -68,7 +71,6 @@ a {
 }
 
 .btn-primary {
-  padding: 10px 0;
   border: none;
   border-radius: 2px;
 
@@ -117,7 +119,6 @@ a {
 
 .page-logo {
   position: relative;
-  flex-shrink: 0;
   width: 220px;
   margin: 0;
   padding-top: 10px;
@@ -164,16 +165,18 @@ a {
 .search-form {
   position: relative;
   width: 270px;
-  flex-shrink: 0;
 }
 
 .search-label {
   position: absolute;
   left: 49px;
   top: 14px;
+  z-index: 1;
 }
 
 .search-form input {
+  position: relative;
+
   width: 270px;
   height: 100%;
   border: none;
@@ -194,10 +197,34 @@ a {
 }
 
 .search-form input:focus {
+  z-index: 2;
+
   color: #000000;
 
   background-color: #ffffff;
+  background-image: url(../img/icon-search-red.svg);
+  background-repeat: no-repeat;
+  background-position: 17px 12px;;
   outline: none; /* состояние фокуса задается изменением цвета согласно макету  */
+}
+
+.search-form .search-label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -32px;
+
+  width: 17px;
+  height: 17px;
+
+  background-image: url(../img/icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.search-form:hover .search-label::before {
+  opacity: 1;
 }
 
 /*верхнее меню покупателя*/
@@ -217,8 +244,8 @@ a {
 
 .shopping-menu a {
   display: inline-block;
-  width: 150px;
-  padding: 12px 0;
+  min-width: 150px;
+  padding: 12px;
   box-sizing: border-box;
 
   color: #ffffff;
@@ -226,7 +253,7 @@ a {
 }
 
 .bookmarks a:not(.empty),
-.cart a:not(.empty){
+.cart a:not(.empty) {
   background-color: #ee3643;
 }
 
@@ -242,15 +269,55 @@ a {
 }
 
 .shopping-menu .bookmarks {
+  position: relative;
   padding-left: 44px;
+}
+
+.shopping-menu .bookmarks::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 17px;
+
+  width: 14px;
+  height: 16px;
 
   background-image: url(../img/icon-bookmark.svg);
   background-repeat: no-repeat;
-  background-position: 18px 12px;
+  background-position: 0 0;
+  opacity: 0.3;
 }
 
 .shopping-menu .cart {
+  position: relative;
   padding-left: 50px;
+}
+
+.shopping-menu .cart::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 18px;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url(../img/cart-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.shopping-menu .bookmarks:hover::before,
+.shopping-menu .bookmarks:focus::before,
+.shopping-menu .cart:hover::before,
+.shopping-menu .cart:focus::before {
+  opacity: 1;
+}
+
+.shopping-menu .bookmarks:active::before,
+.shopping-menu .cart:active::before {
+  opacity: 0.5;
 }
 
 .shopping-menu .order {
@@ -303,6 +370,8 @@ a {
 }
 
 .header-contacts .phone {
+  position: relative;
+
   margin-top: 46px;
   padding-top: 10px;
   padding-left: 71px;
@@ -313,6 +382,20 @@ a {
   font-size: 21px;
   line-height: 21px;
   color: #fb463c
+}
+
+.header-contacts .phone::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 14px;
+
+  width: 19px;
+  height: 19px;
+
+  background-image: url(../img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .header-contacts .address {
@@ -382,7 +465,32 @@ a {
 }
 
 .non-authorised .btn-login {
+  position: relative;
+
   padding-left: 48px;
+}
+
+.non-authorised .btn-login::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 14px;
+
+  width: 20px;
+  height: 17px;
+
+  background-image: url(../img/icon-login-light.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.non-authorised .btn-login:hover::before,
+.non-authorised .btn-login:focus::before {
+  background-image: url(../img/icon-login.svg);
+}
+
+.non-authorised .btn-login:active::before {
+  background-image: url(../img/icon-login-light.svg);
 }
 
 /*нижнее меню сайта*/
@@ -395,10 +503,9 @@ a {
 
 .main-menu {
   display: flex;
-  justify-content: justify;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-left: 16px;
   border-bottom: 5px solid #293449;
   list-style: none;
 
@@ -411,19 +518,21 @@ a {
 }
 
 .main-menu a {
-  display: inline-block;
+  display: block;
   padding-top: 20px;
   padding-bottom: 18px;
-  padding-left: 30px;
+  padding-left: 31px;
   padding-right: 30px;
   color: #ffffff;
   vertical-align: top;
 }
 
-.menu-item:first-child a,
-.main-item:last-child a {
-  padding-left: 35px;
-  padding-right: 35px;
+.menu-item:first-child a {
+  padding-left: 52px;
+}
+
+.menu-item:last-child a {
+  padding-right: 52px;
 }
 
 .main-menu a:hover,
