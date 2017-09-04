@@ -167,6 +167,18 @@ a {
   background-color: #ba2732;
 }
 
+.inner-page .page-logo:hover::after,
+.inner-page .page-logo:focus::after,
+.inner-page .footer-logo:hover::after,
+.inner-page .footer-logo:focus::after {
+  background-color: #9a212a;
+}
+
+.inner-page .page-logo:active::after,
+.inner-page .footer-logo:active::after {
+  background-color: #8e1e26;
+}
+
 .search-form {
   position: relative;
   width: 270px;
@@ -1277,7 +1289,7 @@ input[name="list-toggle"]:checked + label {
 
 .footer-contacts {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   padding-left: 2px;
 
   color: #f3f7f9;
@@ -1335,6 +1347,10 @@ input[name="list-toggle"]:checked + label {
 }
 
 .footer-bottom {
+  margin-top: 20px;
+  padding-top: 35px;
+  padding-bottom: 18px;
+
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -1344,10 +1360,64 @@ input[name="list-toggle"]:checked + label {
 
 .footer-bottom .columns {
   justify-content: space-between;
+  align-items: flex-start;
+}
+
+.copyright {
+  margin: 0;
+  padding: 0;
 }
 
 .socials {
+  display: flex;
+  justify-content: center;
   width: 300px;
+  margin-left: 52px;
+}
+
+.socials a {
+  display: block;
+  width: 41px;
+  height: 41px;
+  margin-right: 4px;
+  border-radius: 50%;
+
+  background-color: #212a3a;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.socials a:hover,
+.socials a:focus,
+.socials a:active {
+  background-color: #ee3643;
+}
+
+.socials-vk {
+  background-image: url(../img/vk-icon.svg);
+}
+
+.socials-fb {
+  background-image: url(../img/fb-icon.svg);
+}
+
+.socials-insta {
+  background-image: url(../img/insta-icon.svg);
+}
+
+.footer-links {
+  display: flex;
+  width: 300px;
+}
+
+.footer-links p {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links span,
+.footer-links a {
+  display: block;
 }
 
 .footer-link {
@@ -1362,6 +1432,10 @@ input[name="list-toggle"]:checked + label {
 .footer-link:active {
   color: #ee3643;
   text-decoration: none;
+}
+
+.footer-links .feedback {
+  margin-right: 52px;
 }
 
 /*модальные окна карты и входа*/
