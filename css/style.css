@@ -1009,7 +1009,6 @@ input[name="toggle"]:checked + .slider-control {
   border: 3px solid #63a63e;
 
   color: #32425c;
-
   text-transform: uppercase;
 
   background-color: #ffffff;
@@ -1037,9 +1036,13 @@ input[name="toggle"]:checked + .slider-control {
   background-image: url(../img/services-pattern.png);
 }
 
+.services h2 {
+  margin-bottom: 28px;
+}
+
 .slider-columns {
   display: flex;
-  margin-top: 70px;
+  margin-top: 68px;
 }
 
 .services-slider-toggles {
@@ -1074,9 +1077,9 @@ input[name="toggle"]:checked + .slider-control {
 
 .services-slider-toggles label {
   display: block;
-  padding-top: 11px;
+  padding-top: 12px;
   padding-left: 22px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
   border-bottom: 1px solid #4d637b;
 
   background-color: #32425c;
