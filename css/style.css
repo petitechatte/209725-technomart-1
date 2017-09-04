@@ -441,6 +441,7 @@ a {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
+  vertical-align: top;
 
   background-color: #ffffff;
 }
@@ -562,7 +563,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: stretch;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -611,16 +611,6 @@ a {
   background-image: url(../img/new-label.png);
 }
 
-.new-label span {
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
-  font-family: "PT Sans", "Candara", "Tahoma", sans-serif;
-  font-weight: 400;
-
-  background-color: #ee3643;
-}
-
 .btn-promo {
   width: 135px;
   margin-left: 2px;
@@ -648,7 +638,7 @@ a {
 .promo-materials {
   background-color: #ffbf47;
   background-image: url(../img/icon-materials.svg);
-  background-position: 213px 32px;
+  background-position: 213px 31px;
   order: 1;
 }
 
@@ -668,13 +658,13 @@ a {
 
 .promo-discount {
   background-color: #8ed78f;
-  background-image: url(../img/icon-tool.svg);
+  background-image: url(../img/icon-discount.svg);
   background-position: 196px 26px;
 }
 
 .promo-delivery {
   background-color: #ffc047;
-  background-image: url(../img/icon-tool.svg);
+  background-image: url(../img/icon-delivery.svg);
   background-position: 191px 32px;
 }
 
@@ -791,8 +781,8 @@ a {
   position: absolute;
   left: 25px;
   bottom: 22px;
-  width: 196px;
-  padding: 10px 0;
+  min-width: 195px;
+  padding: 10px;
 
   text-align: center;
 }
@@ -807,6 +797,7 @@ a {
   border-radius: 50%;
 
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 input[name="toggle"]:checked + .slider-control {
