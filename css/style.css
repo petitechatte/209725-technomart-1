@@ -554,8 +554,8 @@ a {
 .user-menu a {
   position: relative;
 
-  margin-left: 18px;
-  margin-right: 14px;
+  padding-left: 18px;
+  padding-right: 17px;
 
   font-size: 16px;
   line-height: 18px;
@@ -566,14 +566,18 @@ a {
 .user-menu a::after {
   content: "";
   position: absolute;
+  top: 6px;
   left: 100%;
-  top: center;
 
   width: 4px;
   height: 4px;
   border-radius: 50%;
 
   background-color: #32425c;
+}
+
+.user-menu-item:last-child a::after {
+  display: none;
 }
 
 /*нижнее меню сайта*/
