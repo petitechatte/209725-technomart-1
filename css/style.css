@@ -269,8 +269,8 @@ a {
   vertical-align: top;
 }
 
-.bookmarks a:not(.empty),
-.cart a:not(.empty) {
+.bookmarks:not(.empty),
+.cart:not(.empty) {
   background-color: #ee3643;
 }
 
@@ -451,9 +451,8 @@ a {
 
 .non-authorised a,
 .user-profile a {
-  display: inline-block;
+  display: block;
   padding: 12px 25px;
-
 
   font-size: 21px;
   line-height: 21px;
@@ -461,13 +460,6 @@ a {
   vertical-align: top;
 
   background-color: #ffffff;
-}
-
-.user-menu a {
-  font-size: 16px;
-  line-height: 18px;
-  color: #32425c;
-  text-decoration: underline;
 }
 
 .non-authorised a:hover,
@@ -509,6 +501,79 @@ a {
 
 .non-authorised .btn-login:active::before {
   background-image: url(../img/icon-login-light.svg);
+}
+
+.user-navigation .user-profile {
+  width: 300px;
+  margin-bottom: 8px;
+}
+
+.user-profile .profile-link {
+  display: block;
+  width: 248px;
+  flex-grow: 1;
+  padding-left: 47px;
+  padding-right: 0;
+  box-sizing: border-box;
+
+  background-image: url(../img/icon-user-light.svg);
+  background-repeat: no-repeat;
+  background-position: 13px 13px;
+}
+
+.user-profile .profile-link:hover,
+.user-profile .profile-link:focus {
+  background-image: url(../img/icon-user.svg);
+}
+
+.user-profile .profile-link:active {
+  background-image: url(../img/icon-user-light.svg);
+}
+
+.user-profile .quit {
+  display: block;
+  width: 42px;
+  height: 45px;
+  margin: 0;
+  box-sizing: border-box;
+
+  background-image: url(../img/icon-logout-light.svg);
+  background-repeat: no-repeat;
+  background-position: 21px center;
+}
+
+.user-profile .quit:hover,
+.user-profile .quit:focus {
+  background-image: url(../img/icon-logout.svg);
+}
+
+.user-profile .quit:active {
+  background-image: url(../img/icon-logout-light.svg);
+}
+
+.user-menu a {
+  position: relative;
+
+  margin-left: 18px;
+  margin-right: 14px;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.user-menu a::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: center;
+
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+
+  background-color: #32425c;
 }
 
 /*нижнее меню сайта*/
@@ -910,6 +975,11 @@ input[name="toggle"]:checked + .slider-control {
   opacity: 0.3;
 }
 
+.catalog-item .new-label {
+  top: -1px;
+  right: -1px;
+}
+
 .catalog-item .item-title {
   margin: 11px 15px;
 
@@ -1100,6 +1170,10 @@ input[name="toggle"]:checked + .slider-control {
   border-bottom: 1px solid #4d637b;
 
   background-color: #32425c;
+}
+
+.services-toggle label {
+  cursor: pointer;
 }
 
 .services-toggle:last-child label {
