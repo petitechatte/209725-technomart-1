@@ -1577,23 +1577,55 @@ input[name="list-toggle"]:checked + label {
 
 /*внутренняя страница - "хлебные крошки" и заголовок*/
 
-.main-content .columns {
-  flex-wrap: wrap;
-}
-
 .breadcrumbs {
   display: flex;
-  min-height: 59px;
   margin: 0;
   padding: 0;
+  padding-top: 21px;
   list-style: none;
 
   text-transform: uppercase;
 }
 
+.breadcrumbs li {
+  margin: 0;
+  padding: 0;
+}
+
 
 .breadcrumbs a {
+  position: relative;
+
+  display: block;
+  margin: 0;
+  margin-right: 18px;
+  padding: 0;
+  padding-right: 22px;
+
   color: #000000;
+}
+
+.breadcrumbs .home-link {
+  width: 15px;
+  height: 12px;
+
+  background-image: url(../img/icon-home.svg);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.breadcrumbs a::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 0;
+
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #c5c9d1;
+  border-right: 1px solid #c5c9d1;
+
+  transform: rotate(45deg);
 }
 
 .page-title {
