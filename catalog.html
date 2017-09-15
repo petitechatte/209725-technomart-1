@@ -123,21 +123,14 @@
               <fieldset class="price">
                 <legend>Цена:</legend>
                 <div class="price-toggles">
-                  <label class="visually-hidden">
-                    <input type="range" min="0" max="30000" value="0">
-                    Минимальная цена
-                  </label>
-                  <label class="visually-hidden">
-                    <input type="range" min="0" max="30000" value="25000">
-                    Максимальная цена
-                  </label>
-                  <div class="price-max-range"></div>
-                  <div class="price-range"></div>
-                  <span class="min-price"></span>
-                  <span class="max-price"></span>
+                  <div class="price-max-range">
+                    <div class="price-range"></div>
+                  </div>
+                  <div class="price-toggle min-price-toggle"></div>
+                  <div class="price-toggle max-price-toggle"></div>
                 </div>
-                <div class="price-outputs">
-                  <output>0</output> &ndash; <output>30000</output>
+                <div class="price-inputs">
+                  <input type="text" name="min-price" value="0"> &ndash; <input type="text" name="max-price" value="30000">
                 </div>
               </fieldset>
               <fieldset class="producers">
