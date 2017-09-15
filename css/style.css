@@ -1320,7 +1320,9 @@ input[name="list-toggle"]:checked + label {
 }
 
 .inner-page .information {
-  margin-bottom: 73px;
+  margin: 0;
+  padding-top: 65px;
+  padding-bottom: 56px;
 
   background-color: #f2f6f8;
 }
@@ -1427,7 +1429,7 @@ input[name="list-toggle"]:checked + label {
 .footer-bottom {
   margin-top: 20px;
   padding-top: 35px;
-  padding-bottom: 18px;
+  padding-bottom: 30px;
 
   font-size: 16px;
   line-height: 18px;
