@@ -189,6 +189,7 @@ a {
   left: 49px;
   top: 14px;
   z-index: 1;
+  cursor: text;
 }
 
 .search-form input {
@@ -622,12 +623,12 @@ a {
   padding-right: 52px;
 }
 
-.main-menu a:hover,
-.main-menu a:focus {
+.main-menu a[href]:hover,
+.main-menu a[href]:focus {
   background-color: #293449;
 }
 
-.main-menu a:active {
+.main-menu a[href]:active {
   color: rgba(255, 255, 255, 0.5);
 
   background-color: #1d2739;
@@ -1075,6 +1076,7 @@ input[name="toggle"]:checked + .slider-control {
   font-size: 14px;
   line-height: 18px;
   font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
+  cursor: pointer;
 }
 
 .buy-item {
@@ -1178,6 +1180,10 @@ input[name="toggle"]:checked + .slider-control {
 
 .services-toggle label {
   cursor: pointer;
+}
+
+.services-toggle.current label {
+  cursor: default;
 }
 
 .services-toggle:last-child label {
@@ -1794,6 +1800,17 @@ fieldset.power-supply label {
   width: 140px;
   margin-top: 60px;
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.filter .btn-filter:hover,
+.filter .btn-filter:focus {
+  border-color: #bdc6ca;
+}
+
+.filter .btn-filter:active {
+  border-color: #ee3643;
+  outline: none;
 }
 
 /*сортировка*/
