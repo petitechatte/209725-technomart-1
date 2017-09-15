@@ -1657,6 +1657,8 @@ input[name="list-toggle"]:checked + label {
 }
 
 .filter fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -1749,9 +1751,31 @@ input[name="list-toggle"]:checked + label {
   background-color: #f7f3ec;
 }
 
+fieldset.producers {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+fieldset.producers legend {
+  margin-bottom: 13px;
+  padding-top: 17px;
+}
+
+.filter label {
+  display: block;
+  margin-bottom: 16px;
+  padding: 2px;
+  padding-left: 35px;
+}
+
 fieldset.producers label {
   font-size: 15px;
   line-height: 20px;
+}
+
+fieldset.power-supply legend {
+  margin-bottom: 13px;
+  padding-top: 15px;
 }
 
 fieldset.power-supply label {
@@ -1762,6 +1786,12 @@ fieldset.power-supply label {
 
 .custom-input:disabled + label {
   opacity: 0.4;
+}
+
+.filter .btn-filter {
+  width: 140px;
+  margin-top: 60px;
+  box-sizing: border-box;
 }
 
 /*сортировка*/
