@@ -2124,21 +2124,51 @@ fieldset.power-supply label {
   width: 620px;
   height: 273px;
   margin-left: -310px;
+  border-top: 7px solid #ee3643;
+  box-sizing: border-box;
 
   font-family: "Cuprum", "Arial Narrow", "Arial", sans-serif;
 
   background-color: #ffffff;
+  background-image: url(../img/form-1.svg);
+  background-repeat: no-repeat;
+  background-position: 80px 50px;
+  box-shadow: 0px 20px 40px 0px rgba(41, 52, 73, 0.75);
 }
 
 .popup-message {
+  margin: 66px 80px;
+  margin-left: 180px;
+
   font-size: 30px;
   line-height: 30px;
 }
 
 .cart-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 37px 80px;
+
   background-color: #f1f1f1;
 }
 
-btn-alternative {
+.cart-buttons .btn {
+  width: 220px;
+}
+
+.btn-alternative {
   border: none;
+  cursor: pointer;
+
+  color: #000000;
+}
+
+.btn-alternative:hover,
+.btn-alternative:focus {
+  color: #ee3643;
+}
+
+.btn-alternative:active {
+  color: rgba(0, 0, 0, 0.3);
+  outline: none;
 }
