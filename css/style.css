@@ -1538,10 +1538,11 @@ input[name="list-toggle"]:checked + label {
 
   display: none;
   width: 940px;
-  height: 450px;
+  height: 446px;
   margin-left: -470px;
 
   background-color: #565656;
+  box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
 }
 
 .modal-form {
